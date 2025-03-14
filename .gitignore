@@ -116,4 +116,12 @@ Desktop.ini
 
 # Temporary files
 tmp/
-temp/ 
+temp/
+
+# Arquivos específicos contendo chaves de API
+*_key*.py
+*add_key*.py
+*api_key*.py
+# Exceção para os arquivos de modelo e blueprint que não contêm chaves reais
+!app/models/api_key.py
+!app/api/api_keys.py 
