@@ -33,11 +33,12 @@ def fix_api_keys():
             db.session.commit()
             logger.info("Todas as chaves foram removidas com sucesso")
 
-            # Criar uma nova chave de exemplo para OpenAI
+            # Criar uma nova chave de exemplo para OpenAI (não é uma chave real)
+            exemplo_key = "exemplo-chave-nao-real-123456789"
             new_key = APIKey(
                 user_id=1,  # ID do usuário admin
                 provider='openai',
-                api_key='sk-exemplo123456789abcdefghijklmnopqrstuvwxyz'
+                api_key=exemplo_key
             )
 
             db.session.add(new_key)

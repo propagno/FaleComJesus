@@ -44,11 +44,12 @@ def test_decrypt():
                     app.extensions['sqlalchemy'].db.session.commit()
                     print(f'Chave anterior removida (ID: {api_key_id})')
 
-                    # Criar uma nova chave de exemplo
+                    # Criar uma nova chave de exemplo (não é uma chave real)
+                    exemplo_key = "exemplo-chave-nao-real-123456789"
                     new_key = APIKey(
                         user_id=1,
                         provider='openai',
-                        api_key='sk-exemplo123456789abcdefghijklmnopqrstuvwxyz'
+                        api_key=exemplo_key
                     )
                     app.extensions['sqlalchemy'].db.session.add(new_key)
                     app.extensions['sqlalchemy'].db.session.commit()
