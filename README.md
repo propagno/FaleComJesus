@@ -52,8 +52,8 @@ Uma aplicação web que oferece orientação espiritual e aconselhamento baseado
 
 1. Clone o repositório:
 ```bash
-git clone https://github.com/seu-usuario/fale-com-jesus.git
-cd fale-com-jesus
+git clone https://github.com/propagno/FaleComJesus.git
+cd FaleComJesus
 ```
 
 2. Configure as variáveis de ambiente:
@@ -137,4 +137,4 @@ Contribuições são bem-vindas! Por favor, leia as [diretrizes de contribuiçã
 
 ## 📞 Contato
 
-Para dúvidas ou sugestões, entre em contato através de [seu-email@exemplo.com](mailto:seu-email@exemplo.com). 
+Para dúvidas ou sugestões, entre em contato através de [propagno@gmail.com](mailto:propagno@gmail.com).
